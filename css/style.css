@@ -1,0 +1,143 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Colores
+Negro: #0d1b2a
+Blanco: #e0e1dd
+Main: #778da9
+Details: #1b263b */
+body{
+    font-family: sans-serif;
+    background-color: #0d1b2a;
+}
+/* HEADER */
+.header__index{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.logo__container{
+    width: 100px;
+}
+.logo{
+    width: 100%;
+}
+.nav__list{
+    list-style: none;
+    display: flex;
+}
+.mobile-none{
+    display: none;
+}
+.nav__links{
+    color: #e0e1dd;
+    margin:0 .5rem;
+}
+.acount__list{
+    list-style: none;
+    text-align: center;
+}
+.acount__links{
+    color: #e0e1dd;
+}
+/* HEADER QUERIES */
+/* HEADER END */
+/* MAIN */
+.title{
+    font-size: 3rem;
+    text-align: center;
+    color:#0d1b2a ;
+    background-color: #778da9;
+}
+.motorbike{
+    background-color: #1b263b;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.motorbike__link{
+    text-decoration: none;
+    color: #e0e1dd;
+}
+.motorbike__img{
+    width: 100%;
+}
+.motorbike__button{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+/* MAIN QUERIES */
+/* MAIN END */
+/* INFO */
+.info{
+    background-color: #778da9;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.info__sub{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.info__text{
+    color: #e0e1dd;
+}
+.info__button{
+    align-self: flex-end;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #1b263b;
+    border-radius: 1rem;
+    color: #e0e1dd;
+    margin-top: 1rem ;
+}
+.sub--border{
+    border-bottom: solid #1b263b 2px;
+    padding-bottom: 1rem;
+}
+.sub--margin{
+    margin-top: 1rem;
+}
+/* INFO QUERIES */
+/* INFO END */
+/* COMPARE */
+.compare{
+    background-color: #1b263b;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.compare__dates{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.compare__text{
+    color: #e0e1dd;
+    padding: 1rem;
+}
+.button--color-main{
+    background-color: #778da9;
+}
+.compare__container-img{
+    text-align: center;
+}
+/* COMPARE QUERIES */
+/* COMPARE END */
+/* FOOTER */
+.footer__index{
+    background-color: #1b263b;
+    color: #e0e1dd;
+    text-align: center;
+    padding: 2rem;
+}
+/* FOOTER QUERIES */
+/* FOOTER END */
