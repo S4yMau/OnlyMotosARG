@@ -29,7 +29,7 @@
                     <a href="" class="nav__links">Estilos</a>
                 </li>
                 <li class="nav__items">
-                    <a href="" class="nav__links mobile-none">Comparar</a>
+                    <a href="pages/compare.html" class="nav__links mobile-none">Comparar</a>
                 </li>
             </ul>
         </nav>
@@ -44,6 +44,12 @@
             </ul>
         </div>
     </header>
+    <!-- Agregamos un BREADCRUMB de BOOTSTRAP -->
+    <nav aria-label="breadcrumb" class="nav__bootstrap">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active " aria-current="page">Inicio</li>
+        </ol>
+    </nav>
     <h1 class="title">@Only Motos ARG</h1>
     <!-- Parte principal de la pagina -->
     <main class="main__index">
@@ -65,14 +71,15 @@
         </div>
     </main>
     <!-- Seccion para que se subscriban o creen una cuenta -->
+    <!-- Los botones son de BOOTSTRAP -->
     <section class="info">
         <div class="info__sub sub--border">
             <p class="info__text">No te pierdas de las mejores ofertas! Dejanos tu mail para mantenerte al tanto de los mejores precios en las motos 0KM!!!</p>
-            <a href="" class="info__button">Suscribirse</a>
+            <a href="" class="info__button btn-lg">Suscribirse</a>
         </div>
         <div class="info__sub sub--margin">
             <p class="info__text">Sumate a nuestra comunidad de moteros! Crea tu perfil, mostranos tu pasion por las motos y dejamos tu opinion sobre ellas.</p>
-            <a href="" class="info__button">Crear Cuenta</a>
+            <a href="" class="info__button btn-lg">Crear Cuenta</a>
         </div>
     </section>
     <!-- Seccion para hacer comparacion entre 2 motos -->
@@ -83,7 +90,7 @@
             </div>
             <div class="compare__dates">
                 <p class="compare__text">Pone a competir una moto contra otra para poder comparar sus especificaciones y sacarte las dudas de cual te conviene mas</p>
-                <a href="" class="info__button button--color-main">Comparar</a>
+                <a href="pages/compare.html" class="info__button button--color-main btn-lg">Comparar</a>
             </div>
         </div>
     </section>

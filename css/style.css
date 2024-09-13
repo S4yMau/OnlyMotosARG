@@ -141,3 +141,40 @@ body{
 }
 /* FOOTER QUERIES */
 /* FOOTER END */
+.nav__bootstrap{
+    background-color: #778da9;
+    padding: 1rem;
+}
+/* ------------------------------------------------------------------- */
+/* COMPARE HTML */
+/* PICKER */
+.main__compare{
+    width: 90%;
+    background-color: #1b263b;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    border-radius: 2rem;
+}
+.picker__label{
+    color: #e0e1dd;
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.picker__search{
+    padding: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    width: 90%;
+}
+.button-margin{
+    margin-top: 2rem;
+}
+.result__text{
+    color: #e0e1dd;
+    text-decoration: underline;
+    text-align: center;
+    margin: 2rem;
+    font-size: 3rem;
+}
