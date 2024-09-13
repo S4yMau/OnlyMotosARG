@@ -53,44 +53,46 @@
     </nav>
     <h1 class="title">@Only Motos ARG</h1>
     <main class="main__compare">
-        <div class="picker">
-            <label for="motorbike1" class="picker__label">Elegi una moto</label>
-            <input type="search" id="motorbike1" class="picker__search" placeholder="Primera moto">
-        </div>
-        <div class="picker">
-            <label for="motorbike2" class="picker__label">Comparar con </label>
-            <input type="search" id="motorbike2" class="picker__search" placeholder="Segunda moto">
+        <div class="picker__container">
+            <div class="picker">
+                <label for="motorbike1" class="picker__label">Elegi una moto</label>
+                <input type="search" id="motorbike1" class="picker__search" placeholder="Primera moto">
+            </div>
+            <div class="picker">
+                <label for="motorbike2" class="picker__label">Comparar con </label>
+                <input type="search" id="motorbike2" class="picker__search" placeholder="Segunda moto">
+            </div>
         </div>
         <input type="button" value="Comparar" class="info__button button--color-main btn-lg button-margin">
     </main>
     <h2 class="result__text">Resultados:</h2>
     <section class="result">
-        <div class="card" ">
-            <img src="../imgs/estilos.jpg" class="card-img-top" alt="...">
+        <div class="card result__card" >
+            <img src="../imgs/keller-stratus.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Moto 1</h5>
+                <h5 class="card-title result__title">Moto 1</h5>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Motor</li>
                 <li class="list-group-item">Cilindrada</li>
                 <li class="list-group-item">Velocidad maxima</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Ver la moto</a>
+            <div class="card-body info__button button--color-main">
+                <a href="#" class="card-link ">Ver la moto</a>
             </div>
         </div>
-        <div class="card" >
-            <img src="../imgs/estilos.jpg" class="card-img-top" alt="...">
+        <div class="card card--margin result__card" >
+            <img src="../imgs/keller-crono.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Moto 2</h5>
+                <h5 class="card-title result__title">Moto 2</h5>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Motor</li>
                 <li class="list-group-item">Cilindrada</li>
                 <li class="list-group-item">Velocidad maxima</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Ver la moto</a>
+            <div class="card-body info__button button--color-main">
+                <a href="#" class="card-link ">Ver la moto</a>
             </div>
         </div>
     </section>
