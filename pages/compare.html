@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OnlyMotosARG</title>
     <!-- Link de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Link de mi CSS -->
@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Creamos el header con un logo y una navegacion... -->
-    <header class="header__index">
+    <header>
         <div class="logo__container">
             <a href="#" class="logo__container-link">
                 <img src="../imgs/logo.png" alt="Logo de OnlyMotosARG" class="logo">
@@ -26,7 +26,7 @@
                     <a href="" class="nav__links">Marcas</a>
                 </li>
                 <li class="nav__items">
-                    <a href="" class="nav__links">Estilos</a>
+                    <a href="estilos.html" class="nav__links">Estilos</a>
                 </li>
                 <li class="nav__items">
                     <a href="#" class="nav__links mobile-none">Comparar</a>
@@ -68,7 +68,9 @@
     <h2 class="result__text">Resultados:</h2>
     <section class="result">
         <div class="card result__card" >
-            <img src="../imgs/keller-stratus.jpg" class="card-img-top" alt="...">
+            <div class="compare__container-img">
+                <img src="../imgs/keller-stratus.jpg" class="card-img-top motorbike__img" alt="...">
+            </div>
             <div class="card-body">
                 <h5 class="card-title result__title">Moto 1</h5>
             </div>
@@ -82,7 +84,9 @@
             </div>
         </div>
         <div class="card card--margin result__card" >
-            <img src="../imgs/keller-crono.jpg" class="card-img-top" alt="...">
+            <div class="compare__container-img">
+                <img src="../imgs/keller-crono.jpg" class="card-img-top motorbike__img keller-img" alt="...">
+            </div>
             <div class="card-body">
                 <h5 class="card-title result__title">Moto 2</h5>
             </div>

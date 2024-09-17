@@ -1,0 +1,350 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$color-negro: #0d1b2a;
+$color-blanco: #e0e1dd;
+$color-main: #778da9;
+$color-details: #1b263b;
+
+body{
+    font-family: sans-serif;
+    background-color: $color-negro;
+    header{
+        background-color: $color-negro;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem;
+        .logo__container{
+            width: 100px;
+            .logo{
+                width: 100%;
+            }
+        }
+        .nav__list{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            & .mobile-none{
+                display: none;
+            }
+            .nav__links{
+                color: $color-blanco;
+                margin: 0 .5rem;
+            }
+        }
+        .acount__list{
+            list-style: none;
+            text-align: center;
+            .acount__links{
+                color: $color-blanco;
+            }
+        }
+    }
+}
+/* HEADER QUERIES */
+@media screen and (min-width:760px){
+    body header .nav__list .nav__links{
+        margin:0 1rem;
+    }
+    body header .nav__list .mobile-none {
+        display: block;
+    }
+    .acount__list {
+        display: flex ;
+        .acount__items {
+            margin: 0 .5rem ;
+            background-color: $color-main;
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            .acount__links{
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media screen and (min-width:1110px){
+    body header{
+        position: sticky;
+        top: 0;
+        box-shadow: 0 0  .5rem #000 ;
+        font-size: 1.5rem;
+    }
+    body header .nav__list .nav__links{
+        margin:0 1.5rem;
+    }
+}
+/* HEADER END */
+/* MAIN */
+.nav__bootstrap{
+    background-color: $color-main;
+    padding: .5rem 1rem;
+    margin-bottom: .1rem;
+    font-family: sans-serif;
+    color: $color-negro;
+}
+.title{
+    font-size: 9rem;
+    text-align: center;
+    color: $color-negro;
+    background-color: $color-main;
+}
+.motorbike{
+    background-color: $color-details;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    &__link{
+        text-decoration: none;
+        color: $color-blanco;
+    }
+    &__img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+    &__button{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+/* MAIN QUEREIES */
+@media screen and (min-width:1110px){
+    .main__index{
+        display: flex;
+        .motorbike{
+            width: 45%;
+            &__container-img{
+                height: 637px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+/* MAIN END */
+/* INFO */
+.info{
+    background-color: $color-main;
+    padding: 1rem;
+    margin: 1rem 0;
+    &__sub{
+        background-color: $color-main;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+    &__text{
+        color: $color-negro;
+    }
+    &__button{
+        align-self: flex-end;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: $color-details;
+        border-radius: 1rem;
+        color: $color-blanco;
+        margin-top: 1rem;
+    }
+    .sub--border{
+        border-bottom: solid $color-details .1rem;
+        padding-bottom: 1rem;
+    }
+    .sub--margin{
+        margin-top: 1rem;
+    }
+}
+/* INFO QUERIES */
+@media screen and (min-width:760px){
+.info{
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    align-items: center;
+    &__sub{
+        margin: 0 2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    &__button{
+        align-self: center;
+    }
+}
+}
+/* INFO END */
+/* COMPARE */
+.compare{
+    background-color: $color-details;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    &__container-img{
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    &__dates{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        .button--color-main{
+            background-color: $color-main;
+            color: $color-negro;
+        }
+    }
+    &__text{
+        color: $color-blanco;
+        padding: 1rem;
+        text-wrap: pretty;
+    }
+    &__container-img{
+        text-align: center;
+    }
+}
+/* COMPARE QUERIES */
+@media screen and (min-width:1110px){
+    .compare{
+        padding: 0;
+        &__motorbike{
+            display: flex;
+            align-items: center;
+        }
+        &__container-img{
+            border-radius: 1rem 0 0 1rem ;
+        }
+        &__dates{
+            padding: 1rem;
+        }
+    }
+    .img--radius{
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+/* COMPARE END */
+/* FOOTER */
+footer{
+    background-color: $color-main;
+    color: $color-negro;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    text-wrap: pretty;
+}
+/* FOOTER QUERIES */
+@media screen and (min-width:1110px){
+    footer{
+        font-size: 3rem;
+    }
+}
+/* FOOTER END */
+/* -------------------------------- */
+/* COMPARE HTML */
+/* PICKER */
+.main__compare{
+    width: 90%;
+    background-color: $color-details;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    .picker__container{
+        display: flex;
+        flex-direction: column;
+        background-color: $color-details;
+        .picker__label{
+            color: $color-blanco;
+            display: block;
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        .picker__search{
+            padding: .5rem;
+            border-radius: 1rem;
+            outline: none;
+            width: 90%;
+        }
+    }
+    .button--color-main{
+        background-color: $color-main;
+    }
+    .button-margin{
+        margin-top: 2rem;
+        color: $color-negro;
+    }
+}
+/* PICKER QUERIES */
+@media screen and (min-width:1110px){
+    .main__compare{
+        .picker__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+/* PICKER END */
+/* RESULT */
+.result{
+    width: 90%;
+    margin: 1rem auto;
+    &__text{
+        color: $color-blanco;
+        text-decoration: underline;
+        text-align: center;
+        margin: 2rem;
+        font-size: 5rem;
+    }
+    &__card{
+        padding: 1rem;
+        background-color: $color-details;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .card-link{
+            color: $color-blanco;
+            text-decoration: none;
+            background-color: $color-main;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+    &__title{
+        color: $color-blanco;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+.card--margin{
+    margin-top: 1rem;
+}
+/* RESULT QUERIES*/
+@media screen and (min-width:1110px){
+    .result{
+        display: flex;
+        justify-content: space-between;
+        &__card{
+            position: relative;
+            z-index: -1;
+            width: 45%;
+        }
+    }
+    .card--margin{
+        margin-top: 0;
+    }
+    .motorbike__img{
+        object-fit: cover;
+        object-position: bottom;
+    }
+    .compare__container-img{
+        border-radius: 1rem;
+        height: 240px;
+        overflow: hidden;
+    }
+}
+/* RESULT END */
+
