@@ -351,5 +351,68 @@ footer {
   }
 }
 /* RESULT END */
+/* ---------------------- */
+/* ESTILOS HTML */
+/* GRILLA */
+@media screen and (min-width: 1110px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 500px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.card-cub {
+  margin: 1rem;
+}
+
+/* ---------------------------------- */
+/* LOGIN HTML */
+/* SESION */
+.main__login {
+  margin: 1rem;
+  text-align: center;
+  background-color: #778da9;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.button-sesion {
+  background-color: #1b263b;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.footer__login {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.sesion, .register {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1110px) {
+  .sesion {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+  }
+}
+/* ---------------------------------- */
+/* REGISTER HTML */
+/* REGISTER */
+@media screen and (min-width: 760px) {
+  .footer__register {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
