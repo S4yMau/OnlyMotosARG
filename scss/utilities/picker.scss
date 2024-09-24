@@ -1,0 +1,42 @@
+@import "mixin";
+/* PICKER */
+.main__compare{
+    width: 90%;
+    background-color: $color-details;
+    text-align: center;
+    @include tarjetas;
+    .picker__container{
+        @include flex-column;
+        background-color: $color-details;
+        .picker__label{
+            color: $color-blanco;
+            display: block;
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        .picker__search{
+            padding: .5rem;
+            border-radius: 1rem;
+            outline: none;
+            width: 90%;
+        }
+    }
+    .button--color-main{
+        background-color: $color-main;
+    }
+    .button-margin{
+        margin-top: 2rem;
+        color: $color-negro;
+    }
+}
+/* PICKER QUERIES */
+@media screen and (min-width:1110px){
+    .main__compare{
+        .picker__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+/* PICKER END */

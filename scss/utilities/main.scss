@@ -1,0 +1,46 @@
+@import "mixin";
+/* MAIN */
+.nav__bootstrap{
+    background-color: $color-main;
+    padding: .5rem 1rem;
+    margin-bottom: .1rem;
+    font-family: sans-serif;
+    color: $color-negro;
+}
+.title{
+    font-size: 5rem;
+    text-align: center;
+    color: $color-negro;
+    background-color: $color-main;
+}
+.motorbike{
+    background-color: $color-details;
+    width: 90%;
+    @include tarjetas;
+    &__link{
+        text-decoration: none;
+        color: $color-blanco;
+    }
+    &__img{
+        @include img;
+    }
+    &__button{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+/* MAIN QUEREIES */
+@media screen and (min-width:1110px){
+    .main__index{
+        display: flex;
+        .motorbike{
+            width: 45%;
+            &__container-img{
+                height: 637px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+/* MAIN END */

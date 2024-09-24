@@ -1,0 +1,68 @@
+@import "mixin";
+body{
+    font-family: sans-serif;
+    background-color: $color-negro;
+    header{
+        background-color: $color-negro;
+        @include flex-align-center;
+        justify-content: space-between;
+        padding: .5rem;
+        .logo__container{
+            width: 100px;
+            .logo{
+                @include img;
+            }
+        }
+        .nav__list{
+            list-style: none;
+            @include flex-align-center;
+            & .mobile-none{
+                display: none;
+            }
+            .nav__links{
+                color: $color-blanco;
+                margin: 0 .5rem;
+            }
+        }
+        .acount__list{
+            list-style: none;
+            text-align: center;
+            .acount__links{
+                color: $color-blanco;
+            }
+        }
+    }
+}
+/* HEADER QUERIES */
+@media screen and (min-width:760px){
+    body header .nav__list .nav__links{
+        margin:0 1rem;
+    }
+    body header .nav__list .mobile-none {
+        display: block;
+    }
+    .acount__list {
+        display: flex ;
+        .acount__items {
+            margin: 0 .5rem ;
+            background-color: $color-main;
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            .acount__links{
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media screen and (min-width:1110px){
+    body header{
+        position: sticky;
+        top: 0;
+        box-shadow: 0 0  .5rem #000 ;
+        font-size: 1.5rem;
+    }
+    body header .nav__list .nav__links{
+        margin:0 1.5rem;
+    }
+}
+/* HEADER END */

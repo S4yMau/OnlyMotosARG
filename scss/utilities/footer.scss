@@ -1,0 +1,16 @@
+@import "mixin";
+/* FOOTER */
+footer{
+    background-color: $color-main;
+    color: $color-negro;
+    text-align: center;
+    font-size: 2rem;
+    @include text-pretty;
+}
+/* FOOTER QUERIES */
+@media screen and (min-width:1110px){
+    footer{
+        font-size: 3rem;
+    }
+}
+/* FOOTER END */

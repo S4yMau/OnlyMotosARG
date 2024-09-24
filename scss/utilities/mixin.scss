@@ -1,0 +1,26 @@
+@mixin img {
+    width: 100%;
+    border-radius: 1rem;
+}
+@mixin tarjetas {
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+}
+@mixin text-pretty {
+    padding: 1rem;
+    text-wrap: pretty;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin footer-absolute {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

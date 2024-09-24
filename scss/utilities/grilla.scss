@@ -1,0 +1,17 @@
+/* GRILLA */
+@media screen and (min-width:1110px) {
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 500px;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 500px;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.card-cub{
+    margin: 1rem;
+    overflow: hidden;
+}

@@ -1,0 +1,60 @@
+@import "mixin";
+/* RESULT */
+.result{
+    width: 90%;
+    margin: 1rem auto;
+    &__text{
+        color: $color-blanco;
+        text-decoration: underline;
+        text-align: center;
+        margin: 2rem;
+        font-size: 5rem;
+    }
+    &__card{
+        padding: 1rem;
+        background-color: $color-details;
+        border-radius: 1rem;
+        @include flex-column;
+        justify-content: center;
+        .card-link{
+            color: $color-blanco;
+            text-decoration: none;
+            background-color: $color-main;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+    &__title{
+        color: $color-blanco;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+.card--margin{
+    margin-top: 1rem;
+}
+/* RESULT QUERIES*/
+@media screen and (min-width:1110px){
+    .result{
+        display: flex;
+        justify-content: space-between;
+        &__card{
+            position: relative;
+            z-index: -1;
+            width: 45%;
+        }
+    }
+    .card--margin{
+        margin-top: 0;
+    }
+    .motorbike__img{
+        object-fit: cover;
+        object-position: bottom;
+    }
+    .compare__container-img{
+        border-radius: 1rem;
+        height: 240px;
+        overflow: hidden;
+    }
+}
+/* RESULT END */

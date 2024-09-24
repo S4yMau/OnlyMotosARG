@@ -1,0 +1,43 @@
+@import "mixin";
+/* COMPARE */
+.compare{
+    background-color: $color-details;
+    width: 90%;
+    @include tarjetas;
+    &__container-img{
+        border-radius: 1rem;
+        overflow: hidden;
+        text-align: center;
+    }
+    &__dates{
+        @include flex-column;
+        font-size: 2rem;
+        .button--color-main{
+            background-color: $color-main;
+            color: $color-negro;
+        }
+    }
+    &__text{
+        color: $color-blanco;
+        @include text-pretty;
+    }
+}
+/* COMPARE QUERIES */
+@media screen and (min-width:1110px){
+    .compare{
+        padding: 0;
+        &__motorbike{
+            @include flex-align-center;
+        }
+        &__container-img{
+            border-radius: 1rem 0 0 1rem ;
+        }
+        &__dates{
+            padding: 1rem;
+        }
+    }
+    .img--radius{
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+/* COMPARE END */

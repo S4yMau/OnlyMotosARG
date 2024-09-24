@@ -1,0 +1,50 @@
+@import "mixin";
+/* INFO */
+.info{
+    background-color: $color-main;
+    padding: 1rem;
+    margin: 1rem 0;
+    &__sub{
+        background-color: $color-main;
+        font-size: 2rem;
+        @include flex-column;
+    }
+    &__text{
+        color: $color-negro;
+    }
+    &__button{
+        align-self: flex-end;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: $color-details;
+        border-radius: 1rem;
+        color: $color-blanco;
+        margin-top: 1rem;
+    }
+    .sub--border{
+        border-bottom: solid $color-details .1rem;
+        padding-bottom: 1rem;
+    }
+    .sub--margin{
+        margin-top: 1rem;
+    }
+}
+/* INFO QUERIES */
+@media screen and (min-width:760px){
+.info{
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    align-items: center;
+    &__sub{
+        margin: 0 2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    &__button{
+        align-self: center;
+    }
+}
+}
+/* INFO END */

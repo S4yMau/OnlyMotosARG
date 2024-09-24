@@ -1,0 +1,25 @@
+@import "mixin";
+/* SESION */
+.main__login{
+    text-align: center;
+    background-color: $color-main;
+    @include tarjetas;
+}
+.button-sesion{
+    background-color: $color-details;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.footer__login{
+    @include footer-absolute;
+}
+.sesion,.register{
+    font-size: 2rem;
+}
+@media screen and (min-width:1110px) {      
+    .sesion{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2rem;
+    }
+}
