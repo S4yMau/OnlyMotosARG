@@ -10,13 +10,14 @@
     margin-top: 2rem;
     font-size: 2rem;
 }
-.footer__login{
-    @include footer-absolute;
-}
+
 .sesion,.register{
     font-size: 2rem;
 }
-@media screen and (min-width:1110px) {      
+@media screen and (min-width:1110px) {  
+    .footer__login{
+        @include footer-absolute;
+    }    
     .sesion{
         display: flex;
         justify-content: space-evenly;

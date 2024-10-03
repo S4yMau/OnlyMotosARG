@@ -111,6 +111,12 @@ body header .acount__list .acount__links {
   text-align: center;
   font-size: 2rem;
   padding: 1rem;
+  margin-top: 1rem;
+  background-color: #778da9;
+  border-radius: 0.5rem;
+}
+.motorbike__button:hover {
+  opacity: 0.9;
 }
 
 /* MAIN QUEREIES */
@@ -381,17 +387,16 @@ footer {
   font-size: 2rem;
 }
 
-.footer__login {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .sesion, .register {
   font-size: 2rem;
 }
 
 @media screen and (min-width: 1110px) {
+  .footer__login {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   .sesion {
     display: flex;
     justify-content: space-evenly;
