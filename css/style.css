@@ -9,59 +9,75 @@ body {
   font-family: sans-serif;
   background-color: #0d1b2a;
 }
+
 body header {
   background-color: #0d1b2a;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem;
+  z-index: 99;
 }
+
 body header .logo__container {
   width: 100px;
 }
+
 body header .logo__container .logo {
   width: 100%;
-  border-radius: 1rem;
 }
-body header .nav__list {
+
+header label {
+  display: block;
+  font-size: 2rem;
+  color: #e0e1dd;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+.nav__list {
   list-style: none;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 110dvh;
+  top: 65px;
+  left: 1500px;
+  flex-direction: column;
+  background-color: #fff;
+  transition: all 0.5s;
+  float: right;
 }
-body header .nav__list .mobile-none {
-  display: none;
+
+#check:checked ~ .nav__list {
+  left: 0;
 }
-body header .nav__list .nav__links {
+
+body header .nav__list .nav__items {
   color: #e0e1dd;
-  margin: 0 0.5rem;
+  margin: 1rem 0.5rem;
+  display: inline-block;
 }
-body header .acount__list {
-  list-style: none;
-  text-align: center;
+
+.nav__links {
+  color: #0d1b2a;
+  text-decoration: none;
+  transition: all 0.5s;
 }
-body header .acount__list .acount__links {
-  color: #e0e1dd;
+
+.nav__links:hover {
+  opacity: 0.5;
+  text-decoration: underline;
 }
 
 /* HEADER QUERIES */
 @media screen and (min-width: 760px) {
   body header .nav__list .nav__links {
     margin: 0 1rem;
-  }
-  body header .nav__list .mobile-none {
-    display: block;
-  }
-  .acount__list {
-    display: flex;
-  }
-  .acount__list .acount__items {
-    margin: 0 0.5rem;
-    background-color: #778da9;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-  }
-  .acount__list .acount__items .acount__links {
-    text-decoration: none;
   }
 }
 @media screen and (min-width: 1110px) {
@@ -73,6 +89,26 @@ body header .acount__list .acount__links {
   }
   body header .nav__list .nav__links {
     margin: 0 1.5rem;
+  }
+  body header nav {
+    background-color: #0d1b2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+  .nav__list {
+    position: static;
+    flex-direction: row;
+    background-color: #0d1b2a;
+    height: auto;
+    margin-left: 1rem;
+  }
+  .nav__list .nav__links {
+    color: #e0e1dd;
+  }
+  header label {
+    display: none;
   }
 }
 /* HEADER END */
@@ -404,12 +440,5 @@ footer {
   }
 }
 /* REGISTER */
-@media screen and (min-width: 760px) {
-  .footer__register {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

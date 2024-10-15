@@ -3,24 +3,24 @@
 /* RESET */
 @import "utilities/reset";
 //HEADER
-@import "utilities/header";
+@import "principal/header";
 //MAIN
-@import "utilities/main";
+@import "principal/main";
 //INFO
-@import "utilities/info";
+@import "principal/info";
 //COMPARE
-@import "utilities/compare";
+@import "principal/compare";
 //FOOTER
-@import "utilities/footer";
+@import "principal/footer";
 //PICKER
-@import "utilities/picker";
+@import "compare/picker";
 //RESULT
-@import "utilities/result";
+@import "compare/result";
 //GRILLA
-@import "utilities/grilla";
+@import "marcas/grilla";
 //SESION
-@import "utilities/sesion";
+@import "sesion/sesion";
 //REGISTER
-@import "utilities/register";
+@import "register/register";
 
 

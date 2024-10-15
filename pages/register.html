@@ -14,12 +14,14 @@
 <body>
     <!-- Creamos el header con un logo y una navegacion... -->
     <header>
+        <nav>
+            <input type="checkbox" id="check">
+        
         <div class="logo__container">
-            <a href="../index.html" class="logo__container-link">
+            <a href="#" class="logo__container-link">
                 <img src="../imgs/logo.png" alt="Logo de OnlyMotosARG" class="logo">
             </a>
         </div>
-        <nav>
             <ul class="nav__list">
                 <li class="nav__items">
                     <a href="../index.html" class="nav__links">Inicio</a>
@@ -33,18 +35,15 @@
                 <li class="nav__items">
                     <a href="compare.html" class="nav__links mobile-none">Comparar</a>
                 </li>
+                <li class="nav__items"></li>
+                    <a href="login.html" class="nav__links">Iniciar sesion</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Crear cuenta</a>
+                </li>
             </ul>
         </nav>
-        <div>
-            <ul class="acount__list">
-                <li class="acount__items">
-                    <a href="login.html" class="acount__links">Iniciar sesion</a>
-                </li>
-                <li class="acount__items">
-                    <a href="#" class="acount__links">Crear cuenta</a>
-                </li>
-            </ul>
-        </div>
+        <label for="check">=</label>
     </header>
     <main class="main__login">
         <form>
