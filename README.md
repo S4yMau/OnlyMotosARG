@@ -1,0 +1,1 @@
+Esta pagina esta hecha especialmente para las personas fanaticas por las motos y podemos encontrar las fichas tecnicas de ellas. Las podemos encontrar ya sea por marca o por estilos. Tambien la pagina cuenta con un sistema de comparacion de motos.
